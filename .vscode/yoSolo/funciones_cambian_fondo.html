@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoSolo1</title>
+   <!-- <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/litera/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.min.css">
+</head>
+
+<body>
+    <h1 class="text-center m-4"> Funciones Y backgroundColor</h1>
+   
+    <div class="container mt-4 text-center bg-warning" id="conte">
+        <img src="curvas.png" class="img-fluid" alt="">
+        <div class="row">
+            <div class="col-sm-6 text-center bg-danger text-white" id="col1">
+                <h1>Section 1</h1>
+                <hr>
+                <h3>Dentro</h3>
+                <hr>
+                <h5> HR es una linea</h5>
+            </div>
+            <div class="col-sm-6 text-center bg-success" id="sm-6">
+                <h1>Section 2</h1>
+                <hr>
+                <table class="table border border-dark bg-info ">
+                    <tr>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>Viernes</td>
+                        <td>sabado</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Juernes</td>
+                        <td>Fiesta</td>
+                    </tr>
+                </table>
+            </div>
+                <img src="curvas.png" class="img-fluid" alt="">
+                <button class="btn btn-block bg-danger " id="boton" onclick="cambiar()" value="nave" ><h1>Pulsame</h1></button>
+        </div>
+    </div>
+    <script>
+        function cambiar()
+         {
+            conte = document.getElementById('conte');
+            boton = document.getElementById('boton');
+            sm  = document.getElementById('sm-6');
+            col1  = document.getElementById('col1');
+            na = boton.value;
+
+             if (na=="nave") {
+                boton.value ='ro';
+                conte.style.backgroundColor='black';
+                sm.style.backgroundColor='#a80e17';
+                conte.className='container text-center'; 
+                col1.style.backgroundColor='#8A0808'
+                boton.style.backgroundColor='red';
+                boton.innerHTML='<h1>Vuelve pulsar</h1>';
+             }
+            else if (na=="ro") {
+                 boton.value ='nave';
+                conte.style.backgroundColor='#01A9DB';
+                sm.style.backgroundColor='black';
+                col1.style.backgroundColor='#101670'
+                conte.className='alert alert-dark';
+                boton.style.backgroundColor='blue';
+                boton.innerHTML='<h1>otra vez</h1>';
+                 
+             }
+            
+           
+        }
+    </script>
+</body>
+
+</html>

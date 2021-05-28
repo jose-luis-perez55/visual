@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>ToDo1</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon"> 
+    <!-- <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/litera/bootstrap.min.css">  -->
+</head>
+<body>
+    
+    <h1 class="m-4   " id="uno">Tareas pendientes</h1>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4" id="iz">
+                <h3 class="pt-5">Como curiosidad, con 4 lineas de codigo puedes saber el valor del boton del raton <br>
+                    0 = izquierdo 2 = derecho</h3>
+                
+                <h3  class="bg-info" id="info">Valor</h3>
+            </div>
+            <div class="col-sm-4 " id="centro">
+                <h3 class="bg-info">¿No recuerdas tus tareas?</h3>
+                <h3>!Anotalas y no se te pasara nada¡</h3>
+                <div class="card">
+                    <div class="card-header bg-dark">
+                        <h4>Tareas</h4>
+                    </div>
+                <form id="formulario"  class="card-body " >
+                    <div class="form-group">
+                <input size="25px" type="text" class="input" id="input" placeholder="Introduce la tarea y pulsa intro"
+                >
+              </div>
+            </div>
+        <ul class="tareas" id="tareas">
+            
+        </ul>
+    </form>
+  </div>
+  <div class="col-sm-4 pt-5" id="der">
+    <h3 class="text-center">
+        Clic izquierdo para marcar y desmarcar como completado <br>
+        Botón derecho para eliminar
+    </h3>
+  </div>
+  </div>
+</div>
+    
+    
+    <script src="codigo.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora</title>
+    <script>
+        function pintar_hora_minutos()
+         {
+            var fecha = new Date();
+            var hora  = fecha.getHours();
+            var minit = fecha.getMinutes();
+            alert('Son las '+hora+' y '+minit); 
+
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="¿Que hora es ?" onclick="pintar_hora_minutos()">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 05</title>
+</head>
+<body>
+    nombre : <input type="text" name="" id="nombre" size="15"><br>
+    apellido 1 : <input type="text" name="" id="ap1" size="15"><br>
+    apellido 2 : <input type="text" name="" id="ap2" size="15">
+    <input type="button" value="Introducir" onclick="introducir()">
+    <script>
+        function introducir()
+         {
+            let nombre = document.getElementById('nombre').value;
+            let ap1    = document.getElementById('ap1').value;
+            let ap2    = document.getElementById('ap2').value;
+
+            let miarray = new  Array(3);
+            miarray[0] = nombre;
+            miarray[1] = ap1;
+            miarray[2]= ap2;
+            let compuesto = "Gracias   "+miarray[0]+ " "+miarray[1]+" "+miarray[2];
+            alert(compuesto);
+        }
+    </script>
+</body>
+</html>

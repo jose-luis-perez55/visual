@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo2.9</title>
+</head>
+<body>
+    <h1 id="uno">Ejemplo de Objetos</h1>
+    <script>
+        function cambiar()
+         {
+           var uno =  document.getElementById('uno');
+            document.title='Ejemplo de Objetos';
+            document.bgColor="yellow";    
+            uno.style.backgroundColor='blue';
+            uno.style.color='#ccc'
+            uno.style.fontFamily='Arial'
+        }
+    </script>
+    <input type="button" value="Púlsame" onclick="cambiar()">
+</body>
+</html>

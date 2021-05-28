@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 04</title>
+</head>
+<body>
+    <script>
+        let miarray = Array();
+        miarray[0]= 'Hola ';
+        miarray[1]= ' a todos ';
+        miarray[2] = ' los visitantes';
+
+        document.write('<br>', miarray);
+        document.write('<br>', miarray[0], miarray[1], miarray[2]);
+
+        //Metodo push añade
+
+            miarray.push(' de otras galaxias. ');
+            document.write('<br>', miarray);
+            document.write('<br>', miarray[0], miarray[1], miarray[2]);
+       
+        //Metodo pop quita el último
+
+            miarray.pop();
+            document.write('<br>', miarray);
+            document.write('<br>', miarray[0], miarray[1], miarray[2]);
+
+        //Metodo shift quita el primero
+
+            miarray.shift();
+            document.write('<br>', miarray);
+            document.write('<br>', miarray[0], miarray[1]);
+
+        //Metodo unshift añade al primero
+
+            miarray.unshift('buenas que tal');
+            document.write('<br>', miarray);
+            document.write('<br>', miarray[0], miarray[1], miarray[2]);
+
+        
+    </script>
+</body>
+</html>
