@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trass</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+     <link rel="stylesheet" type="text/css" href="https://bootswatch.com/3/darkly/bootstrap.min.css"> 
+    <style>
+        #unos, #dos, #tres, #cuatro
+        {
+            width: 100px;
+            height: 50px;
+           
+            font-weight: bold;
+            position: relative;
+            animation: mymove 10s ;
+            
+        }
+        #uno {animation-timing-function: ease;}
+        #dos {animation-timing-function: ease-in-out;}
+       
+        @keyframes mymove {
+        from {left: 0px;}
+        to {left: 50px;}
+            }
+        footer{
+            background-color: rgb(70, 68, 68);
+        }
+        #candado, ol
+        {
+            margin-left: 80px;
+        }
+        #lg4
+        {
+            background-color: cornsilk;
+            color: rgb(95, 13, 13);
+        }
+        .jumbotron
+        {
+            background-image: url('mundo.webp'); 
+        }
+      
+        body
+        {
+            background-image: url('mundo.webp');
+          
+        }
+        .col-lg-5
+        {
+             background-color:#030b4696; 
+            font-size: 30px;
+        }
+        * {
+  padding: 0;
+  margin: 0;
+}
+.container1 {
+    width: 20%;
+  min-height: 50vh;  
+ /* background: #333; */
+}
+.image {
+  perspective: 3000px;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top:20%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+.image img {
+  transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+  box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+  transition: all .4s;
+  transform-style: preserve-3d;
+}
+.image:hover img {
+  transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="jumbotron  ">
+            <img src="img/curvas.png" alt="" width="100px" style="float: left; padding: 10px;margin: 0 20px ;" >
+           
+         <h1 ><span id="tres" class="text-danger">T</span>rass<span id="cuatro" class="text-danger">D</span>igital</h1>
+            <p>Creamos páginas Web y mas...</p>
+            <!-- <img src="trassdigitalnegro.jpg" width="300px" alt="No esta aqui"> -->
+           
+        </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+              <img src="img/curvas.png" alt="logo" style="width:30px; float: left;">
+              <span id="tres" class="text-danger">T</span>
+              <span id="cuatro" class="">D</span>
+            </a>
+            
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Registrate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Iniciar presupuesto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+       
+        <div class="row">
+           
+            <div class="col-lg-5 text-center">
+              
+                <h2>Que hacemos ?</h2>
+                <ul>
+                    <li>Diseñamos tu Página Web</li>
+                    <li>Desde el principio estamos a tu lado</li>
+                    <li>Disponemos de la última tecnologia</li>
+                    <li>Atendemos todas tus ideas</li>
+                    <li>Asesoremiento en desarrollo y SEO</li>
+                    <li>Creamos lo que imaginas</li>
+                    <li>Sin limite de creatividad</li>
+                </ul>
+                <img width="500px" src="img/ojo1.png" alt="">
+            </div>
+            <div class="col-lg-5 text-center" >
+                
+            <div class="container1">
+                    <h2>Servicios</h2>
+                    <div class="image">
+                      <img width="140%" src="img/tarjeta.png" class="img" alt="">
+                    </div>
+                  </div>
+                <!-- <img  width="90%" src="tarjeta.png" class="m-5" alt="">  -->
+                <ol>
+                    <li>Desarrollo completo</li>
+                    <li>Servicio de asesoramiento personalizado</li>
+                    <li>Servicio Tecnico </li>
+                    <li>Asistencia remota</li>
+                    <li>Mantenimiento general</li>
+                    <li>Informacion y mejoras</li>
+                    <li>Actualizaciones </li>
+                </ol>
+              
+            </div>
+            <div class="col-sm-2">
+                <p>Hablamos?</p>
+                <p style="margin-top: 125px;">Estaremos encantados de atenderte en todo momento</p>
+                <p>Atencion personalizada</p>
+                <p>Envianos un correo a: trassdigital@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container bg-default"></div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3>Redes Sociales</h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3>@Copyright Reservados</h3>
+                    <h3>trassdigital@gmail.com</h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Mapa</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
